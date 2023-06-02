@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="trytryseeDataSet" targetNamespace="http://tempuri.org/trytryseeDataSet.xsd" xmlns:mstns="http://tempuri.org/trytryseeDataSet.xsd" xmlns="http://tempuri.org/trytryseeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="trytryseeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="trytryseeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WinformPoject0527.Properties.Settings.GlobalReference.Default.trytryseeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProductCategoriesTableAdapter" GeneratorDataComponentClassName="ProductCategoriesTableAdapter" Name="ProductCategories" UserDataComponentName="ProductCategoriesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="trytryseeConnectionString (Settings)" DbObjectName="trytrysee.dbo.ProductCategories" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ParentCategoryID FROM dbo.ProductCategories</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ParentCategoryID" DataSetColumn="ParentCategoryID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="trytryseeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="trytryseeDataSet" msprop:Generator_DataSetName="trytryseeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProductCategories" msprop:Generator_RowEvHandlerName="ProductCategoriesRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductCategoriesRowDeleted" msprop:Generator_RowDeletingName="ProductCategoriesRowDeleting" msprop:Generator_RowEvArgName="ProductCategoriesRowChangeEvent" msprop:Generator_TablePropName="ProductCategories" msprop:Generator_RowChangedName="ProductCategoriesRowChanged" msprop:Generator_RowChangingName="ProductCategoriesRowChanging" msprop:Generator_TableClassName="ProductCategoriesDataTable" msprop:Generator_RowClassName="ProductCategoriesRow" msprop:Generator_TableVarName="tableProductCategories" msprop:Generator_UserTableName="ProductCategories">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ParentCategoryID" msprop:Generator_ColumnPropNameInRow="ParentCategoryID" msprop:Generator_ColumnPropNameInTable="ParentCategoryIDColumn" msprop:Generator_ColumnVarNameInTable="columnParentCategoryID" msprop:Generator_UserColumnName="ParentCategoryID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
